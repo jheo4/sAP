@@ -72,8 +72,8 @@ More information on `mmdetection` installation can be found their [Github page](
 
 Download the pretrained model weights from mmdetection's [model zoo](https://github.com/open-mmlab/mmdetection/blob/3e902c3afc62693a71d672edab9b22e35f7d4776/docs/model_zoo.md). Please use the link above to access the right version of the model zoo to avoid any compatibility issues.
 
-For the default `exp/offline_det.sh` and other scripts, you can find the pretrained model [here](https://download.openmmlab.com/mmdetection/v2.0/mask_rcnn/mask_rcnn_r50_fpn_2x_coco/mask_rcnn_r50_fpn_2x_coco_bbox_mAP-0.392__segm_mAP-0.354_20200505_003907-3e542a40.pth).
-If the line is invalid, find it from mmdetection's mask_rcnn config [link](https://github.com/open-mmlab/mmdetection/tree/master/configs/mask_rcnn) of R-50-FPN pytorch 2x.
+For the default `exp/offline_det.sh` and other scripts, you can find the pretrained model -- [here](https://download.openmmlab.com/mmdetection/v2.0/mask_rcnn/mask_rcnn_r50_fpn_2x_coco/mask_rcnn_r50_fpn_2x_coco_bbox_mAP-0.392__segm_mAP-0.354_20200505_003907-3e542a40.pth).
+If the link is invalid, find it from mmdetection's mask_rcnn config, [here](https://github.com/open-mmlab/mmdetection/tree/master/configs/mask_rcnn), of R-50-FPN pytorch 2x at the Results and models section.
 
 Note that Argoverse-HD is annotated according to COCO's format and class definitions. Therefore, it's reasonable to directly test out COCO pretrained models on Argoverse-HD.
 
