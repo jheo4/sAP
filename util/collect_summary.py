@@ -19,7 +19,7 @@ import numpy as np
 # exp_list = 'exp-list.txt'
 
 # 3. A list of experiment names
-exp_list = ['rt_mrcnn50_nm_s0.5', 'srt_mrcnn50_nm_inf_s0.5']
+exp_list = ['rt_mrcnn50_nm_s0.5', 'srt_mrcnn50_nm_inf_s0.5', 'mrcnn50_nm_s0.5', 'srt_mrcnn50_nm_ds_pf1.2_s0.5']
 
 summary_name = 'Single vs Infinite GPUs'
 work_dir = '/data2/mengtial/Exp/Argoverse-HD/output'
