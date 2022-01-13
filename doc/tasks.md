@@ -8,11 +8,18 @@ This is the standard task of running a detector on a dataset, and can be used as
 Code: `exp/offline_det.sh`, `det/det_offline.py`
 
 
+## Basic Setup after offline detection
+Offline detection will run with the pretrained model and dataset. For streaming examples, they need `time_info.pkl` which is not in the dataset or any downloaded files. `time_info.pkl` and other recorded runtime pkls can be generated from followings.
+1. run `./exp/streaming_det.sh`.
+2. run `./exp/extract_runtime.sh`
+3. Then, test `./exp/sim_streaming_det.sh`
+4. After some experiments, run `./util/collect_summary.py` to collec the summaries of the experiments.
+
 ## Streaming Detection 
 
 In this task, the detector processes image frames from a sensor stream in a real-time online fashion. Frames may be skipped if the detector fails to catch up (as our analysis suggests: <em>it's OK to skip frames!</em>). The sensor stream is simulated by playing back videos (or extracted image frames from videos) in real-time. Before the real-time playback, all frames in the video are loaded to system memory so that disk I/O does not introduce any latency. The output of streaming detection is timestamped output.
 
-Code: `exp/sim_streaming_det.sh`, `det/rt_det.py`
+Code: `./exp/streaming_det.sh`, `det/rt_det.py`
 
 
 ## Streaming Evaluation 
